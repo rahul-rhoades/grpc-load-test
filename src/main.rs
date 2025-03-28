@@ -36,7 +36,7 @@ struct Args {
     transactions: bool,
 }
 
-#[tokio::main(flavor = "current_thread")]
+#[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     // Parse command line arguments
     let args = Args::parse();
